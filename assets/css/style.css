@@ -1,0 +1,458 @@
+/* Reset CSS */
+*{
+     padding: 0;
+     margin: 0;
+     box-sizing: border-box;
+}
+html{
+     font-family: Arial, Helvetica, sans-serif;
+     scroll-behavior: smooth;
+}
+/* Comom */
+
+.btn{
+     background-color: #000;
+     color: #ddd;
+     text-decoration: none;
+     /* margin:0 16px; */
+     padding: 11px 16px;
+     display: inline-block;
+     text-align: center;
+     width: 50%;
+     border:none;
+}    
+.btn:hover{
+     cursor: pointer;
+     background-color: #ccc;
+     color: #000;
+}
+.pull-right{
+     float: right;
+}
+.mt-8{
+     margin-top: 8px !important;
+}
+.mt-16{
+     margin-top: 16px !important;
+}
+.text-center{
+     text-align: center !important;
+}
+.row::after{
+     content: "";
+     display: block;
+     clear: both;
+}
+.row{
+     margin-left: -8px;
+     margin-right: -8px;
+}
+.col{
+     float: left;
+     padding-left: 8px;
+     padding-right: 8px;     
+}
+.col-full{
+     width: 100%;
+}
+.col-haft{
+     width: 50%;
+}
+.col-third{
+     width: 33.333333%;
+}
+::selection{
+     background-color: #f05123;
+     color: #fff;
+}
+.text-white{
+     color: #fff !important;
+}
+
+/*
+1. Vi tri
+2. kich thuoc(w,h)
+3. mau sac
+4. kieu dang    
+*/
+#main{
+
+}
+
+
+
+#nav{
+     display: inline-block;
+
+}
+#nav, .subnav{
+     list-style-type: none;
+}
+#nav>li{
+     display: inline-block;
+     position: relative;
+}
+#nav li{    
+    
+}
+#nav>li>a{     
+     color: aliceblue;
+     text-transform: uppercase;
+}
+#nav li a{     
+     text-decoration: none; 
+     line-height: 46px;
+     padding: 0px 24px;
+     display: inline-block;     
+}
+#nav li:hover .subnav{
+     display: block;
+}
+
+#nav > li:hover > a,
+#nav .subnav li:hover{
+     color: #000;
+     background-color: #ccc;
+}
+#nav .subnav{     
+     display: none;
+     position: absolute;
+     top : 101%;
+     left: 0px;
+     min-width: 160px;
+     background-color:white;
+     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+#nav .subnav a{
+     color: #000;
+     padding: 0 12px;
+     line-height: 38px;
+
+}
+#nav .nav-icon{
+     font-size: 8px;
+}
+#header{
+     position: fixed;
+     top:0;
+     left: 0;
+     right: 0;
+     height: 46px;
+     background-color: black;     
+     /* cho header nam tren slider */
+     z-index: 1;
+     /* overflow: hidden;      */
+}
+#header .mobile-menu-btn{
+     position: absolute;
+     top: 0;
+     right: 0;
+     display: none;
+}
+#header .mobile-menu-btn,
+#header .search-btn{
+     float: right;
+     padding: 0 21px;
+}
+#header .search-btn:hover{
+     background-color: chocolate;
+     cursor: pointer;
+}
+
+#header .mobile-menu-btn:hover{
+     background-color: #ccc;
+}
+#header .mobile-menu-btn:hover .menu-icon{
+     color: #000;
+}
+
+#header .menu-icon,
+#header .search-icon{
+     color: #fff;
+     font-size: 25px;
+     line-height: 46px;         
+}
+
+#slider{
+     position: relative;
+     margin-top: 46px;
+     padding-top: 50%;
+     background: url('../img/slider/slider1.png') top center / cover no-repeat;     
+}
+#slider .text-content{
+     position: absolute;
+     bottom: 0;
+     color: #fff;
+     text-align: center;
+     padding: 32px 16px;
+     /* left: 50%;
+     transform: translateX(-50%); */
+     width: 100%;
+}
+#slider .text-heading{
+     font-weight: 500;
+     font-size: 24px;
+     margin-bottom: 20px;
+}
+#slider .text-decscription{
+     font-size: 15px;
+     text-shadow: 0 0 1px black;
+}
+
+#content .content-section{
+     width: 800px;
+     max-width: 100%;
+     padding: 64px 0 112px;
+     margin-left: auto;
+     margin-right: auto;
+     padding-left: 16px;
+     padding-right: 16px;
+}
+#content .secttion-heading{
+     text-align: center;
+     font-weight: 500;
+     font-size: 30px;
+     letter-spacing: 4px;
+}
+#content .section-sub-heading{
+     text-align: center;
+     font-size: 15px; 
+     margin-top: 25px;
+     font-style: italic;
+     opacity: 0.6;
+     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+#content .about-text{
+     text-align: justify;
+     font-size: 15px;
+     margin: 15px 0px;
+     line-height: 1.4;
+}
+#content .member-list{
+     padding: 32px 0;
+     overflow: hidden;
+}
+#content .member-name{
+     font-size: 15px;    
+     margin: 15px 0;
+}
+#content .member-img{
+     width: 154px;
+     border-radius: 4px;
+}
+/* Tour-secttion */
+.tour-section{
+     background-color: #000;
+}
+.tickets-list{
+     background-color: #fff;
+     list-style-type: none;
+     margin-top: 40px;
+}
+.tickets-list li{
+     color: #757575;
+     font-size: 15px;
+     padding: 11px 16px;
+     border-bottom: 1px solid #ddd;
+}
+.tour-section .sold-out{
+     background-color: #f44336;
+     color: #fff;
+     padding: 3px 4px;
+     margin-left: 16px;
+}
+.tour-section .quanttity{
+     background-color: #000;
+     color: #fff;
+     float: right;
+     width: 24px;
+     height: 24px;
+     border-radius: 50%;
+     text-align: center;
+     line-height: 24px;
+     margin-top: -3px;
+
+     
+}
+
+/* Place */
+.places-list{
+     padding-top: 16px;
+     overflow: hidden;      
+}
+
+.place-img{
+     width: 100%;
+     display: block;
+}
+.place-img:hover{
+     opacity: 0.55;
+}
+
+.place-body{
+     background-color: #fff;
+     padding:16px;
+     font-size: 15px;
+     
+}
+
+.place-heading{
+     font-size: 15px;
+     font-weight: 700;
+     margin: 15px 0;
+}
+
+.place-time{
+     margin: 15px 0;
+     opacity: 0.6;
+     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+}
+
+.place-desc{
+     margin: 15px 0;
+}
+
+.contact-content{
+     margin-top: 48px;
+}
+.contact-info{
+     font-size: 18px;
+     line-height: 1.5;
+}
+.contact-info i[class*="ti-"]{
+     width: 30px;
+     display: inline-block;
+}
+.contact-form{
+     font-style: 15px;
+}
+.contact-form .form-control {
+     padding: 10px;
+     border: 1px solid #ccc;
+     width: 100%;
+}
+.map-section img{
+     width: 100%;
+}
+
+/* Footer-secttion */
+#footer{
+     padding: 64px 16px;    
+     text-align: center; 
+}
+.social-list{
+     font-size: 24px;
+     
+}
+.social-list a{
+     color: rgba(0, 0, 0, 0.6);
+     text-decoration: none;
+}
+.social-list a:hover{
+     color: rgba(88, 46, 46, 0.4);
+}
+.copy-right{
+     margin-top: 15px;
+     color: rgba(0, 0, 0, 0.6);
+     font-size: 15px;
+     line-height: 1.5;
+}
+.copy-right a{
+     color: rgba(0, 0, 0, 0.6);
+}
+
+.modal
+{
+     position: fixed;
+     top: 0;
+     bottom: 0;
+     right: 0;
+     left: 0;
+     background: rgba(0, 0, 0, 0.5);
+     align-items: center;
+     justify-content:center;
+     display: none;
+}
+.modal.open{
+     display: flex;
+}
+
+.modal-container{
+     background: #fff;
+     width: 900px;
+     max-width: calc(100% - 32px);
+     min-height: 200px;
+     position: relative;
+     animation: modalOpen  ease .5s;
+}
+.modal-header{
+     background:#009688;
+     height: 130px;
+     display: flex;
+     align-items: center;
+     justify-content:center;
+     font-size: 30px;
+     color: #ffffff;
+}
+.modal-heading-icon{
+     padding-right: 16px;
+}
+.modal-close{
+     position: absolute;
+     right: 0;
+     top: 0;
+     color: #ffffff;
+     padding: 12px;
+     cursor: pointer;
+     opacity: 0.8;
+}
+.modal-close:hover{
+     opacity: 1;
+}
+.modal-body{
+     padding: 18px;
+}
+.modal-lable{
+     display: block;
+     font-size: 15px;
+}
+.modal-input{     
+     width: 100%;
+     font-size: 15px;
+     border: 1px solid #ccc;
+     padding: 10px;
+     margin-top: 10px;
+     margin-bottom: 24px;
+}
+#buy-tickets{
+     color: #ffffff;
+     font-size: 15px;
+     text-transform: uppercase; 
+     padding: 18px;
+     width: 100%;
+     background:#009688;
+     cursor: pointer;
+}
+#buy-tickets:hover{
+     opacity: 0.9;
+}
+.modal-footer{
+     text-align: right;
+     padding: 16px;
+}
+.modal-footer a{
+     color: #2196F3;
+}
+@keyframes  modalOpen{
+from{
+     opacity: 0;
+     transform: translateY(-150px);
+}
+to{
+     opacity: 1;
+     transform: translateY(0px);
+}
+}
+
+
